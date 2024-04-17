@@ -13,6 +13,74 @@
         android:theme="@style/Theme.MyApplication"
         tools:targetApi="31">
         <activity
+            android:name=".aaveggie2"
+            android:exported="false" />
+        <activity
+            android:name=".ggveggie"
+            android:exported="false" />
+        <activity
+            android:name=".gVeggie2"
+            android:exported="false" />
+        <activity
+            android:name=".gcolor3"
+            android:exported="false" />
+        <activity
+            android:name=".Veggie4"
+            android:exported="false" />
+        <activity
+            android:name=".fruit4"
+            android:exported="false" />
+        <activity
+            android:name=".color4"
+            android:exported="false" />
+        <activity
+            android:name=".color3"
+            android:exported="false" />
+        <activity
+            android:name=".Veggie3"
+            android:exported="false" />
+        <activity
+            android:name=".veggie2"
+            android:exported="false" />
+        <activity
+            android:name=".Veggie1"
+            android:exported="false" />
+        <activity
+            android:name=".fruit3"
+            android:exported="false" />
+        <activity
+            android:name=".fruit2"
+            android:exported="false" />
+        <activity
+            android:name=".fruit1"
+            android:exported="false" />
+        <activity
+            android:name=".color2"
+            android:exported="false" />
+        <activity
+            android:name=".color1"
+            android:exported="false" />
+        <activity
+            android:name=".Veggies"
+            android:exported="false" />
+        <activity
+            android:name=".Fruits"
+            android:exported="false" />
+        <activity
+            android:name=".Color"
+            android:exported="false" />
+        <activity
+            android:name=".start"
+            android:exported="false" />
+        <activity
+            android:name=".signin"
+            android:exported="false" />
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-3197761075754201~7095698215" />
+
+        <activity
             android:name=".Math4"
             android:exported="false" />
         <activity
@@ -77,7 +145,7 @@
             android:exported="false" />
         <activity
             android:name=".second"
-            android:exported="true" />
+            android:exported="false" />
         <activity
             android:name=".splashActivity"
             android:exported="true">
@@ -89,7 +157,7 @@
         </activity>
         <activity
             android:name=".MainActivity"
-            android:exported="true" />
+            android:exported="false" />
     </application>
 
 </manifest>

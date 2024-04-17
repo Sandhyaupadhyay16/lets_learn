@@ -7,7 +7,6 @@
     android:layout_height="match_parent"
     tools:context=".second">
 
-
     <ImageView
         android:id="@+id/imageView3"
         android:layout_width="match_parent"
@@ -22,6 +21,34 @@
         app:layout_constraintVertical_bias="1.0"
         app:srcCompat="@drawable/screen" />
 
+    <pl.droidsonroids.gif.GifImageView
+        android:layout_width="206dp"
+        android:layout_height="195dp"
+        android:src="@drawable/dinosaur"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+
+    <TextView
+        android:id="@+id/welcomehome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/hanged_letters"
+        android:padding="@dimen/_10sdp"
+        android:text="Welcome"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_50sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
     <ImageButton
         android:id="@+id/learn"
         android:layout_width="150dp"
@@ -29,6 +56,7 @@
         android:clickable="true"
         android:scaleType="fitXY"
         android:visibility="visible"
+        android:layout_margin="@dimen/_15sdp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/imageView3"
         app:layout_constraintHorizontal_bias="0.157"
@@ -43,6 +71,7 @@
         android:layout_height="wrap_content"
         android:fontFamily="cursive"
         android:text="Learn"
+        android:layout_margin="@dimen/_15sdp"
         android:textSize="@dimen/_15sdp"
         android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -57,6 +86,7 @@
         android:layout_width="150dp"
         android:layout_height="143dp"
         android:scaleType="fitXY"
+        android:layout_margin="@dimen/_15sdp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.862"
@@ -70,6 +100,7 @@
         android:layout_width="150dp"
         android:layout_height="143dp"
         android:scaleType="fitXY"
+        android:layout_margin="@dimen/_15sdp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/imageView3"
         app:layout_constraintHorizontal_bias="0.862"
@@ -83,6 +114,7 @@
         android:layout_width="150dp"
         android:layout_height="143dp"
         android:scaleType="fitXY"
+        android:layout_margin="@dimen/_15sdp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/imageView3"
         app:layout_constraintHorizontal_bias="0.157"
@@ -97,6 +129,7 @@
         android:layout_height="wrap_content"
         android:fontFamily="cursive"
         android:text="Quiz"
+        android:layout_margin="@dimen/_15sdp"
         android:textSize="@dimen/_15sdp"
         android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -112,6 +145,7 @@
         android:layout_height="wrap_content"
         android:fontFamily="cursive"
         android:text="Feedback"
+        android:layout_margin="@dimen/_15sdp"
         android:textSize="@dimen/_15sdp"
         android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -127,6 +161,7 @@
         android:layout_height="wrap_content"
         android:fontFamily="cursive"
         android:text="Settings"
+        android:layout_margin="@dimen/_15sdp"
         android:textSize="@dimen/_15sdp"
         android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"

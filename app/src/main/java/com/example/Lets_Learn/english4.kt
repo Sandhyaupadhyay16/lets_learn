@@ -2,30 +2,52 @@ package com.example.Lets_Learn
 
 import android.media.MediaPlayer
 import android.net.Uri
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
+import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
+import java.io.IOException
 
 class english4 : AppCompatActivity() {
+    private var mp: MediaPlayer? = null
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_english4)
 
-        var english4play = findViewById<Button>(R.id.english4playbtn)
-        var english4stop = findViewById<Button>(R.id.english4stopbtn)
-        var mp = MediaPlayer()
+        val english4play = findViewById<Button>(R.id.english4playbtn)
+        val english4stop = findViewById<Button>(R.id.english4stopbtn)
+
         english4play.setOnClickListener {
-            mp.setDataSource(
-                this,
-                Uri.parse("android.resource://" + this.packageName + "/" + R.raw.d)
-            )
-            mp.prepare()
-            mp.start()
+            if (mp == null) {
+                mp = MediaPlayer()
+            }
+
+            try {
+                if (!mp!!.isPlaying) {
+                    mp?.setDataSource(
+                        this,
+                        Uri.parse("android.resource://" + this.packageName + "/" + R.raw.d)
+                    )
+                    mp?.prepare()
+                    mp?.start()
+                }
+            } catch (e: IOException) {
+                e.printStackTrace()
+                Toast.makeText(this, "Failed to start playback", Toast.LENGTH_SHORT).show()
+            }
         }
+
         english4stop.setOnClickListener {
-            mp.stop()
-            mp.release()
-            mp = MediaPlayer()
+            mp?.stop()
+            mp?.release()
+            mp = null
         }
+    }
+
+    override fun onStop() {
+        super.onStop()
+        mp?.release()
+        mp = null
     }
 }
